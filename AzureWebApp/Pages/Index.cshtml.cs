@@ -25,10 +25,6 @@ namespace AzureWebApp.Pages
             {
                 Trace.TraceError("*****************************************************EEEEEEEEEEERRRRRRRRRRRRRRRRROOOOOOOOOOOOOOORRRRRRRRRRRR**********************************************************");
             }
-            finally 
-            {
-                throw new Exception();
-            }
             Trace.TraceInformation("Hellooooo");
             Trace.TraceWarning("Hellooooo");
             Trace.TraceError("Hellooooo");
