@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Diagnostics;
 
 namespace AzureWebApp.Pages
 {
@@ -16,6 +17,9 @@ namespace AzureWebApp.Pages
 
         public void OnGet()
         {
+            Trace.TraceInformation("Hellooooo");
+            Trace.TraceWarning("Hellooooo");
+            Trace.TraceError("Hellooooo");
             ViewData.Add("env", _config["Environment"]);
         }
     }
