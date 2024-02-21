@@ -17,6 +17,18 @@ namespace AzureWebApp.Pages
 
         public void OnGet()
         {
+            try
+            {
+                throw new Exception();
+            }
+            catch(Exception)
+            {
+                Trace.TraceError("*****************************************************EEEEEEEEEEERRRRRRRRRRRRRRRRROOOOOOOOOOOOOOORRRRRRRRRRRR**********************************************************");
+            }
+            finally 
+            {
+                throw new Exception();
+            }
             Trace.TraceInformation("Hellooooo");
             Trace.TraceWarning("Hellooooo");
             Trace.TraceError("Hellooooo");
